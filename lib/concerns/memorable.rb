@@ -9,4 +9,11 @@ module ClassMethods
   end
 end
   #self keyword is omitted when defining class methods inside modules
+  module InstanceMethods
+      def initialize
+        self.class.all << self
+      end
+    end
+    
 end
+
