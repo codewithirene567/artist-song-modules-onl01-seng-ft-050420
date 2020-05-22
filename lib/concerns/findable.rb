@@ -1,10 +1,10 @@
 module Findable
-  module InstanceMethods
+  module ClassMethods
   def find_by_name
 
 
     def find_by_name(name)
-      @@songs.detect{|a| a.name == name}
+      self.all.detect{|a| a.name == name}
     end
 
   end
