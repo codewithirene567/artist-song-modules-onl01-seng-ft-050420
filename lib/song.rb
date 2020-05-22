@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-extend Memorable
+extend Memorable::ClassMethods
 include Paramable
 
 #extend Memorable::ClassMethods
