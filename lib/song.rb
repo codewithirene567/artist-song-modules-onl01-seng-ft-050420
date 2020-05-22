@@ -5,7 +5,7 @@ class Song
 include Paramable::InstanceMethods
 
 
-include ::InstanceMethods
+include Memorable::InstanceMethods
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
 
